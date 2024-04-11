@@ -127,7 +127,7 @@ def play_game():
     t.hideturtle()
     
     # Ask the user for their permission
-    name = turtle.textinput("Input", "do you want to start the game?").lower
+    name = turtle.textinput("Welcome", "do you want to start the game?").lower
     create_base()
     
     repetition = []
