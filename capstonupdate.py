@@ -127,7 +127,7 @@ def play_game():
     t.hideturtle()
     
     # Ask the user for their permission
-    name = turtle.textinput("Welcome", "do you want to start the game?").lower
+    name = turtle.textinput("Welcome", "do you want to start the game?").lower()
     create_base()
     
     repetition = []
@@ -163,7 +163,7 @@ def play_game():
         show_message("Well done! You guessed -" + str(correct_guess) + "- correctly =)")
         score += 1
         show_message("Your score is: " +str(score))
-        user = turtle.textinput("input", "do you want to play again?").lower
+        user = turtle.textinput("input", "do you want to play again?").lower()
         if user == "yes":
             play_again()
             
