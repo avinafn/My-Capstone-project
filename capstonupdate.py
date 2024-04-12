@@ -138,7 +138,7 @@ def play_game():
     show_message("Your word has " + str(length) + " characters")
 
     while max_guesses > 0 and progress != correct_guess:
-        guess = turtle.textinput(progress, "guess a letter?")
+        guess = turtle.textinput(progress, "guess a letter?").lower()
         if guess in correct_guess:
             for i in range(length):
                 if correct_guess[i] == guess:
